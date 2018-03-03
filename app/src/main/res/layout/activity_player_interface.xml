@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fanbasenhl.android.a5topnhlplayers.PlayerInterface">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/nhl"
+            android:onClick="nhl_link"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/nhl"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Click the image to continue to mini-wiki"
+            android:layout_margin="10dp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/crosby"
+                android:onClick="setRedirectToCrosbyWiki"
+                android:layout_width="100dp"
+                android:layout_height="140dp"
+                android:src="@drawable/crosby"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="8dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="140dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:text="#1 Sidney Crosby"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:text="Born: August 7, 1987"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:text="Birthplace: Nova Scotia, Canada"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:text="Played for: Pittsburgh Penguins"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/price"
+                android:onClick="setRedirectToPriceWiki"
+                android:layout_width="100dp"
+                android:layout_height="140dp"
+                android:src="@drawable/price"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="8dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="140dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:text="#2 Carey Price"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:text="Born: August 16, 1987"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:text="Birthplace: Anahim Lake, Canada"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:text="Played for: Montreal Canadiens"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/ovechkin"
+                android:onClick="setRedirectToOvechkinWiki"
+                android:layout_width="100dp"
+                android:layout_height="140dp"
+                android:src="@drawable/ovechkin"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="8dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="140dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:text="#3 Alexander Ovechkin"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:text="Born: September 17, 1985"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:text="Birthplace: Moscow, Russia"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:text="Played for: Washington Capitals"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/tavares"
+                android:onClick="setRedirectToTavaresWiki"
+                android:layout_width="100dp"
+                android:layout_height="140dp"
+                android:src="@drawable/tavares"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="8dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="140dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:text="#4 John Tavares"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:text="Born: September 20, 1990"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:text="Birthplace: Mississauga, Canada"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:text="Played for: New York Islanders"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/stamkos"
+                android:onClick="setRedirectToStamkosWiki"
+                android:layout_width="100dp"
+                android:layout_height="140dp"
+                android:src="@drawable/stamkos"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="8dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="140dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:text="#5 Steven Stamkos"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:text="Born: February 7, 1990"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:text="Birthplace: Markham, Canada"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:text="Played for: Tampa Bay Lightning"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

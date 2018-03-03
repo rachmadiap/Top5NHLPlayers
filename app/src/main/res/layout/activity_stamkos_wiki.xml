@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="12dp">
+
+    <LinearLayout
+        android:id="@+id/topInterface"
+        android:layout_margin="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/nhl"
+            android:onClick="nhl_link"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:src="@drawable/nhl"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Steven Stamkos"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#5"
+                android:textSize="55dp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/lightning"
+            android:onClick="lightning_link"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:src="@drawable/lightning"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/stamkos_pic1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/stamkos"
+        android:layout_below="@id/topInterface"
+        android:layout_marginLeft="10dp"/>
+
+    <ImageView
+        android:id="@+id/stamkos_pic2"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/stamkos2"
+        android:layout_below="@id/stamkos_pic1"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/stamkos_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Steven Stamkos (born February 7, 1990) is a Canadian professional ice hockey centre, and captain of the Tampa Bay Lightning of the National Hockey League (NHL). He is a two-time Maurice Richard Trophy winner as the NHL's leading goal-scorer (2010 and 2012), is a two-time NHL Second Team All-Star (2011, 2012) and has been named to five NHL All-Star Games (2011, 2012, 2015, 2016, 2018)."
+        android:layout_toRightOf="@id/stamkos_pic1"
+        android:layout_below="@id/topInterface"
+        android:textSize="14dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/stamkos_pic1"
+        android:layout_below="@id/stamkos_text1"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="#HockeyIsForEveryone"/>
+
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="12dp">
+
+    <LinearLayout
+        android:id="@+id/topInterface"
+        android:layout_margin="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/nhl"
+            android:onClick="nhl_link"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:src="@drawable/nhl"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sidney Crosby"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#1"
+                android:textSize="60dp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/penguins"
+            android:onClick="penguins_link"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:src="@drawable/penguins"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/crosby_pic1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/crosby"
+        android:layout_below="@id/topInterface"
+        android:layout_marginLeft="10dp"/>
+
+    <ImageView
+        android:id="@+id/crosby_pic2"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/crosby2"
+        android:layout_below="@id/crosby_pic1"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/crosby_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sidney Patrick Crosby, ONS (born August 7, 1987) is a Canadian professional ice hockey player, who serves as captain of the Pittsburgh Penguins of the National Hockey League (NHL). After an exceptional minor and junior career, Crosby was one of the most highly regarded draft picks in hockey history, leading many to refer to the 2005 Draft Lottery as the ''Sidney Crosby Sweepstakes''. Nicknamed ''Sid the Kid'' and ''The Next One'', he was selected first overall by the Penguins."
+        android:layout_toRightOf="@id/crosby_pic1"
+        android:layout_below="@id/topInterface"
+        android:textSize="14dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/crosby_pic1"
+        android:layout_below="@id/crosby_text1"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="#HockeyIsForEveryone"/>
+
+</RelativeLayout>

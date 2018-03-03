@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="12dp">
+
+    <LinearLayout
+        android:id="@+id/topInterface"
+        android:layout_margin="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/nhl"
+            android:onClick="nhl_link"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:src="@drawable/nhl"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alexander Ovechkin"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#3"
+                android:textSize="55dp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/capitals"
+            android:onClick="capitals_link"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:src="@drawable/capitals"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ovechkin_pic1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ovechkin"
+        android:layout_below="@id/topInterface"
+        android:layout_marginLeft="10dp"/>
+
+    <ImageView
+        android:id="@+id/ovechkin_pic2"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ovechkin2"
+        android:layout_below="@id/ovechkin_pic1"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/ovechkin_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alexander Mikhailovich ''Alex'' Ovechkin is a Russian professional winger and captain of the Washington Capitals of the National Hockey League (NHL). He is regarded as one of the best ice hockey players of the modern NHL. A highly touted prospect, Ovechkin was selected by the Capitals first overall in the 2004 NHL Entry Draft. He won the Calder Memorial Trophy as rookie of the year, scoring 52 goals and 54 assists to lead all rookies with 106 points and finishing third overall in league scoring."
+        android:layout_toRightOf="@id/ovechkin_pic1"
+        android:layout_below="@id/topInterface"
+        android:textSize="14dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ovechkin_pic1"
+        android:layout_below="@id/ovechkin_text1"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="#HockeyIsForEveryone"/>
+
+</RelativeLayout>
